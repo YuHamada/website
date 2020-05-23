@@ -1,10 +1,9 @@
-@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
-@import url(https://fonts.googleapis.com/css?family=Modern+Antiqua);
+/*@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
+@import url(https://fonts.googleapis.com/css?family=Modern+Antiqua);*/
 
 /* reset */
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
 address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;}
-ul{list-style:none;}
 table{border-collapse:collapse;border-spacing:0;}
 caption,th{text-align:left;}
 q:before,q:after{content:'';}
@@ -14,13 +13,31 @@ h1,h2,h3,h4,h5,h6{font-size:100%;}
 img,abbr,acronym,fieldset{border:0;}
 
 body{
-	font: 14px/1.9 'Noto Sans JP', Arial, Verdana, 游ゴシック, YuGothic,'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', メイリオ, Meiryo,sans-serif;
+	font-family: /*"Avenir Next", Arial,*/  "Hiragino Kaku Gothic Pro", Osaka, "ヒラギノ角ゴ Pro W3", メイリオ, Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 	font-weight: 300;
 	-webkit-text-size-adjust:100%;
 	overflow-x: hidden;
 	color: #000;
 	background: #fff;
+	padding: 40px;
 }
+
+
+ul{
+    list-style: square;
+}
+
+
+ul.indent{
+    padding-left: 2em;
+    list-style: square;
+}
+
+
+ul.nostyle{
+    list-style: none;
+}
+
 
 a{
 	color: #0066ff;
@@ -43,20 +60,17 @@ a:active, a:focus,input:active, input:focus{outline:0;}
 
 
 /* フッター
-------------------------------------------------------------*/
+------------------------------------------------------------
 #footer{
 	clear: both;
 	padding: 50px 10px 50px 0;
 	text-align: center;
 	font-size: 12px;
 }
-
+*/
 
 /* 共通
 ------------------------------------------------------------*/
-h1, h2{
-	font-family: 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', serif;
-}
 
 img{
 	max-width: 100%;
@@ -67,126 +81,71 @@ section{
   clear: both;
 }
 
-section h2{
-	width: 60%;
-	margin: 70px auto;
+
+/* h2
+------------------------------------------------------------*/
+h2{
+	width: 100%;
+	margin: 50px auto;
 	font-size: 22px;
 	font-weight:normal;
 	text-align: center;
 }
 
-section h2 span {
+/* underlined h2
+------------------------------------------------------------*/
+h2 span {
 	padding-bottom: 20px;
 	border-bottom: 3px solid #000;
 }
 
+
+/* text
+------------------------------------------------------------*/
+.inner_left{
+	width: 80%;
+	margin: 0px 0px;
+	padding-left: 40px;
+    	font-size: 15px;
+}
+
 .inner{
 	width: 80%;
-	margin: 0 auto;
-	padding-bottom: 50px;
-}
-
-#sec03 .inner, #sec04 .inner{
-	border-bottom: 1px solid #a0a0a0;
-}
-
-.innerS{
-	width: 60%;
-	margin: 0 auto;
-	padding-bottom: 80px;
+	margin: 0px 0px;
+	padding-left: 40px;
+    	font-size: 15px;
 }
 
 
-/* SEC02 Gallery
+
+/* Top
 ------------------------------------------------------------*/
-#sec02{
-	padding: 0 !important;
+#top h1{
+	padding: 20px;
+	font-size: 35px;
+	font-weight: normal;
+	text-align: center;
+	padding-top: 0;
+
 }
 
-#sec02 header{
-	display: none;
-}
 
-#gallery{
-	overflow: hidden;
-}
-
-#gallery li{
+/* What's new
+------------------------------------------------------------*/
+#new{
+        width: 300px;
 	float: left;
-	width: calc(100%/3);
-	line-height: 0;
-}
-#gallery li.full{
-	width: 100%;
+	margin: 20px auto;
 }
 
-
-#gallery img{
-	display: block;
-	width: 100%;
-	height: auto;
-}
-
-
-/* SEC03 BRAND
+/* Contact
 ------------------------------------------------------------*/
-.col4 .img{
-	margin: 0 auto;
+#contact{
+        width: 500px;
+	float: right;
+	margin: 20px auto;
 }
 
-
-
-/* SEC04 PROJECT
-------------------------------------------------------------*/
-#sec04{
-	padding-bottom: 0 !important;
-}
-
-.article{
-	clear: both;
-	overflow: hidden;
-	padding-bottom: 50px;
-}
-
-.article img{
-	float: left;
-	margin: 5px 20px 20px;
-}
-
-.article p{
-	margin-bottom: 20px;
-}
-
-
-
-/* SEC05 COMPANY
-------------------------------------------------------------*/
-#sec05 p{
-	margin-bottom: 5px;
-}
-
-.col2 li{
-	display: inline-block;
-	width: 100%;
-  margin: 20px 0;
-}
-
-#map{
-	position: relative;
-	padding-bottom: 75%;
-	height: 0;
-	overflow: hidden;
-	z-index: 0;
-}
-
-#map iframe{
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100% !important;
-	height: 100% !important;
-	border: 0;
-}
 
 
 
@@ -223,7 +182,9 @@ section h2 span {
 	}
 	
 	#sidebar h1{
-		padding: 30px 0;
+  	        padding-top: 50px;
+  	        padding-bottom: 0px;
+		border-bottom: 3px solid #000;
 	}
 
 	#mainnav li{
