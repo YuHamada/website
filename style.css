@@ -170,8 +170,8 @@ h2 span {
 /* Contact
 ------------------------------------------------------------*/
 #contact{
-        width: 70%;
-/*	float: right;*/
+        width: 60%;
+	float: right;
 	margin: 20px auto;
 }
 
