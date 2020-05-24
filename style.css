@@ -162,7 +162,7 @@ h2 span {
 /* What's new
 ------------------------------------------------------------*/
 #new{
-        width: 250px;
+        width: 30%;
 	float: left;
 	margin: 20px auto;
 }
@@ -170,7 +170,7 @@ h2 span {
 /* Contact
 ------------------------------------------------------------*/
 #contact{
-        width: 500px;
+        width: 60%;
 	float: right;
 	margin: 20px auto;
 }
