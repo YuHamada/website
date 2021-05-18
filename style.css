@@ -187,6 +187,28 @@ h2 span {
 }
 
 
+/* Links
+------------------------------------------------------------*/
+#links h2 {
+	padding-bottom: 0px;
+	text-align: left;
+	padding-left: 60px;
+	margin: 40px auto;
+
+}
+
+
+/* Tools
+------------------------------------------------------------*/
+#tools h2 {
+	padding-bottom: 0px;
+	text-align: left;
+	padding-left: 60px;
+	margin: 40px auto;
+
+}
+
+
 
 /* RESPONSIVE 設定
 ------------------------------------------------------------*/
