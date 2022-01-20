@@ -4,8 +4,23 @@
 	<meta charset="UTF-8">
 	<title>Yu Hamada's webpage</title>
 	<link rel="stylesheet" media="all" href="style.css">
-	<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-	<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+	<!-- 
+	     <script src="https://polyfill.io/v3/polyfill.js?features=es6"></script>
+	     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script> 
+	-->
+	<script>
+	  MathJax = {
+	      chtml: {
+		  matchFontHeight: false
+	      },
+	      tex: {
+		  inlineMath: [['$', '$']]
+	      }
+	  };
+	</script>
+	<script id="MathJax-script" async
+		src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+	</script>
 </head>
 
 <body id="publications">
@@ -45,7 +60,7 @@
 
 		  <b><a href="https://inspirehep.net/authors/1783414">(My paper list in INSPIRE)</a></b> <br>
 
-		  <li><b>$mu$TRISTAN,</b> <br> 
+		  <li><b>$\mu$TRISTAN,</b> <br> 
 		    Y. Hamada, R. Kitano, R. Matsudo, H. Takaura, and M. Yoshida  <br> 
 		    <a href="https://arxiv.org/abs/2201.06664">hep-ph/2201.06664</a>
 		  </li>
