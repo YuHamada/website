@@ -1,2 +1,2 @@
 # website
-This is a repository for a personal website of Yu Hamada, who is a Ph.D student majoring in physics.
+This is a repository for a personal website of Yu Hamada, who is a particle physicsist in Osaka.
